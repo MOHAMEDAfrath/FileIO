@@ -12,6 +12,7 @@ namespace FileIOOperations
         public static void FileOperationsDemo()
         {
             string path = @"C:\Users\afrat\source\repos\FileIOOperations\FileIOOperations\FileIO.txt";
+            //Checks whether the file exists or not
             if (File.Exists(path))
             {
                 Console.WriteLine("File Exists");
