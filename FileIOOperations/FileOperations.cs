@@ -17,6 +17,11 @@ namespace FileIOOperations
             {
                 Console.WriteLine("File Exists");
             }
+            //Read all lines using ReadAllLines in the text
+            Console.WriteLine("Reads All lines in the text");
+            string[] lines = File.ReadAllLines(path);
+            for(int i =0;i<lines.Length;i++)
+                Console.WriteLine(lines[i]);
         }
     }
 }

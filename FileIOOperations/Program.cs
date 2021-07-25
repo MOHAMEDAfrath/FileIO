@@ -6,7 +6,6 @@ namespace FileIOOperations
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             FileOperations.FileOperationsDemo();
         }
     }
