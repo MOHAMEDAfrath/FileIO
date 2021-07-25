@@ -1,3 +1,5 @@
 Bike
-Car
-Cycle
+car
+cycle
+truck
+Auto

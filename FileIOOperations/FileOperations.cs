@@ -51,5 +51,14 @@ namespace FileIOOperations
                 }
             }
         }
+        public static void StreamWriterDemo()
+        {
+            using (StreamWriter streamWriter = File.AppendText(path))
+            {
+                streamWriter.WriteLine("Auto");
+                streamWriter.Close();
+                Console.WriteLine(File.ReadAllText(path));
+            }
+        }
     }
 }

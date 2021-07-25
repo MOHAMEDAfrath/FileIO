@@ -9,6 +9,8 @@ namespace FileIOOperations
             FileOperations.FileOperationsDemo();
             Console.WriteLine("Stream Reader");
             FileOperations.StreamReaderDemo();
+            Console.WriteLine("Stream Writer");
+            FileOperations.StreamWriterDemo();
         }
     }
 }
