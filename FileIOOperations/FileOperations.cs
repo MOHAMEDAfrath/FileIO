@@ -9,6 +9,7 @@ namespace FileIOOperations
 {
     class FileOperations
     {
+        public static string path = @"C:\Users\afrat\source\repos\FileIOOperations\FileIOOperations\FileIO.txt";
         public static void FileOperationsDemo()
         {
             string path = @"C:\Users\afrat\source\repos\FileIOOperations\FileIOOperations\FileIO.txt";
@@ -28,17 +29,27 @@ namespace FileIOOperations
             string read = File.ReadAllText(path);
             Console.WriteLine(read);
             //Copy the data from one file to another,if file exists it is deleted
-            
+            Console.WriteLine("*Copy file from one to another*");
             if (File.Exists(copypath))
             {
                 File.Delete(copypath);
-                Console.WriteLine("*Deleted cause file already exist and data is added*");
+                Console.WriteLine("*Deleted copy path file cause file already exist and data is added*");
             }
-            Console.WriteLine("*Copy file from one to another*");
             File.Copy(path, copypath);
             Console.WriteLine("Copied");
 
 
+        }
+        public static void StreamReaderDemo()
+        {
+            using(StreamReader sr = File.OpenText(path))
+            {
+                string s = "";
+                while((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+            }
         }
     }
 }
