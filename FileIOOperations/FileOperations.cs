@@ -18,10 +18,14 @@ namespace FileIOOperations
                 Console.WriteLine("File Exists");
             }
             //Read all lines using ReadAllLines in the text
-            Console.WriteLine("Reads All lines in the text");
+            Console.WriteLine("*Reads All lines in the text*");
             string[] lines = File.ReadAllLines(path);
             for(int i =0;i<lines.Length;i++)
                 Console.WriteLine(lines[i]);
+            //Reads the content in the file using readalltext
+            Console.WriteLine("*Reads All text in the text file*");
+            string read = File.ReadAllText(path);
+            Console.WriteLine(read);
         }
     }
 }
