@@ -1,0 +1,22 @@
+﻿[
+  {
+    "firstname": "Mohamed",
+    "lastname": "Afrath S",
+    "Address": "pursaiwalkam",
+    "City": "Chennai",
+    "State": "Tamilnadu",
+    "pincode": "600007",
+    "phonenumber": "984163536",
+    "emailId": "afrathsheik@yahoo.in"
+  },
+  {
+    "firstname": "Raj",
+    "lastname": "Kumar",
+    "Address": "Menod",
+    "City": "Boston",
+    "State": "USA",
+    "pincode": "ZIP8565",
+    "phonenumber": "7874562134",
+    "emailId": "raj@gmail.com"
+  }
+]

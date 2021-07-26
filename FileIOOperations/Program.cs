@@ -19,6 +19,8 @@ namespace FileIOOperations
             XMLDemo.Serialize();
             Console.WriteLine("###XML DeSerialize###");
             XMLDemo.Deserialize();
+            Console.WriteLine("###JSON to CSV###");
+            JSONtoCsv.ReadJSONAndWriteToCSV();
 
 
 
