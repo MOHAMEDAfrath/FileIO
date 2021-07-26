@@ -11,6 +11,14 @@ namespace FileIOOperations
             FileOperations.StreamReaderDemo();
             Console.WriteLine("Stream Writer");
             FileOperations.StreamWriterDemo();
+            Console.WriteLine("***Binary Serialize***");
+            //BinaryOperations.Serialization();
+            Console.WriteLine("***Binary Deserialize***");
+            DeserializeDemo.Deserialize();
+
+
+
+
         }
     }
 }
