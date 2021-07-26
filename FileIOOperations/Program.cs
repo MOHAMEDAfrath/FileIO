@@ -15,6 +15,10 @@ namespace FileIOOperations
             //BinaryOperations.Serialization();
             Console.WriteLine("***Binary Deserialize***");
             DeserializeDemo.Deserialize();
+            Console.WriteLine("###XML Serialize###");
+            XMLDemo.Serialize();
+            Console.WriteLine("###XML DeSerialize###");
+            XMLDemo.Deserialize();
 
 
 
